@@ -1,21 +1,24 @@
 package com.example.gugudanapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity()
 {
     lateinit var btn5 : Button;
 
+    //internal var numbtnArr = ArrayList<Button>(10);
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_table_layout)
         var edt1 = findViewById<EditText>(R.id.edt1);
         var edt2 = findViewById<EditText>(R.id.edt2);
         var btn1 = findViewById<Button>(R.id.btn1);
@@ -27,7 +30,83 @@ class MainActivity : AppCompatActivity()
 
         btn5 = findViewById(R.id.btn5);
 
-        btn1.setOnClickListener { 
+//        var numbtn0 = findViewById<Button>(R.id.btnNum0)
+//        var numbtn1 = findViewById<Button>(R.id.btnNum1)
+//        var numbtn2 = findViewById<Button>(R.id.btnNum2)
+//        var numbtn3 = findViewById<Button>(R.id.btnNum3)
+//        var numbtn4 = findViewById<Button>(R.id.btnNum4)
+//        var numbtn5 = findViewById<Button>(R.id.btnNum5)
+//        var numbtn6 = findViewById<Button>(R.id.btnNum6)
+//        var numbtn7 = findViewById<Button>(R.id.btnNum7)
+//        var numbtn8 = findViewById<Button>(R.id.btnNum8)
+//        var numbtn9 = findViewById<Button>(R.id.btnNum9)
+
+        //배열로 만들기
+        var numbtnArr = ArrayList<Button>(10);
+
+        var numbtnIDArr = arrayOf(R.id.btnNum0, R.id.btnNum1, R.id.btnNum2, R.id.btnNum3, R.id.btnNum4,
+                                  R.id.btnNum5, R.id.btnNum6, R.id.btnNum7, R.id.btnNum8, R.id.btnNum9)
+
+
+
+        for(i in 0..numbtnIDArr.size-1 step 1)
+        {
+//            numbtnArr[i] = findViewById<Button>(numbtnIDArr[i])
+            numbtnArr.add(findViewById<Button>(numbtnIDArr[i]))
+        }
+
+
+
+        for(i in 0..numbtnArr.size-1 step 1) {
+            numbtnArr[i].setOnClickListener {
+                if (edt1.isFocused == true) {
+                    var num = edt1.text.toString() + i
+                    edt1.setText(num)
+                } else if (edt2.isFocused == true) {
+                    var num = edt2.text.toString() + i
+                    edt2.setText(num)
+                } else {
+                    Toast.makeText(this, "에디트를 선택해 주세요!", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+
+//        numbtn0.setOnClickListener {
+//            if(edt1.isFocused)
+//            {
+//                var num = edt1.text.toString() + "0"
+//                edt1.setText(num)
+//            }
+//            else if(edt2.isFocused)
+//            {
+//                var num = edt2.text.toString() + "0"
+//                edt2.setText(num)
+//            }
+//            else
+//            {
+//                Toast.makeText(this, "에디트를 선택해 주세요!", Toast.LENGTH_SHORT).show()
+//            }
+//        }
+//
+//        numbtn1.setOnClickListener {
+//            if(edt1.isFocused)
+//            {
+//                var num = edt1.text.toString() + "1"
+//                edt1.setText(num)
+//            }
+//            else if(edt2.isFocused)
+//            {
+//                var num = edt2.text.toString() + "1"
+//                edt2.setText(num)
+//            }
+//            else
+//            {
+//                Toast.makeText(this, "에디트를 선택해 주세요!", Toast.LENGTH_SHORT).show()
+//            }
+//        }
+
+        btn1.setOnClickListener {
             var num1 = edt1.text.toString();
             var num2 = edt2.text.toString();
 
