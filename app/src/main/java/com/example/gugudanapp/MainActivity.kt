@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
 
 //        setContentView(R.layout.activity_main)
-        setContentView(R.layout.activity_main_table_layout)
+//        setContentView(R.layout.activity_main_table_layout)
+        setContentView(R.layout.activity_main_grid_linear)
+        setContentView(R.layout.activity_main_grid_only)
         var edt1 = findViewById<EditText>(R.id.edt1);
         var edt2 = findViewById<EditText>(R.id.edt2);
         var btn1 = findViewById<Button>(R.id.btn1);
