@@ -16,3 +16,4 @@ rootProject.name = "GugudanApp"
 include ':app'
 include ':ex04_2'
 include ':ex04_1_2_3'
+include ':ex06_reservation'
