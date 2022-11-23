@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/ex06_3_tab_host" />
             <option value="$PROJECT_DIR$/ex06_actionbar_fragment" />
             <option value="$PROJECT_DIR$/ex06_reservation" />
+            <option value="$PROJECT_DIR$/ex06_webview" />
           </set>
         </option>
       </GradleProjectSettings>
