@@ -14,18 +14,36 @@ class MainActivity : TabActivity() {
 
         var tabHost = this.tabHost
 
-        var tabSpecSong = tabHost.newTabSpec("SONG").setIndicator("음악별")
-        tabSpecSong.setContent(R.id.tabSong)
-        tabHost.addTab(tabSpecSong)
+        var tabSpec1 = tabHost.newTabSpec("TAB1").setIndicator("강아지")
+        tabSpec1.setContent(R.id.iv1)
+        tabHost.addTab(tabSpec1)
 
-        var tabSpecArtist = tabHost.newTabSpec("ARTIST").setIndicator("가수별")
-        tabSpecArtist.setContent(R.id.tabArtist)
-        tabHost.addTab(tabSpecArtist)
+        var tabSpec2 = tabHost.newTabSpec("TAB2").setIndicator("고양이")
+        tabSpec2.setContent(R.id.iv2)
+        tabHost.addTab(tabSpec2)
 
-        var tabSpecAlbum = tabHost.newTabSpec("ALBUM").setIndicator("앨범별")
-        tabSpecAlbum.setContent(R.id.tabAlbum)
-        tabHost.addTab(tabSpecAlbum)
+        var tabSpec3 = tabHost.newTabSpec("TAB3").setIndicator("토끼")
+        tabSpec3.setContent(R.id.iv3)
+        tabHost.addTab(tabSpec3)
 
-        tabHost.currentTab = 0
+        var tabSpec4 = tabHost.newTabSpec("TAB4").setIndicator("말")
+        tabSpec4.setContent(R.id.iv4)
+        tabHost.addTab(tabSpec4)
+
+        tabHost.currentTab = 1
+
+//        var tabSpecSong = tabHost.newTabSpec("SONG").setIndicator("음악별")
+//        tabSpecSong.setContent(R.id.tabSong)
+//        tabHost.addTab(tabSpecSong)
+//
+//        var tabSpecArtist = tabHost.newTabSpec("ARTIST").setIndicator("가수별")
+//        tabSpecArtist.setContent(R.id.tabArtist)
+//        tabHost.addTab(tabSpecArtist)
+//
+//        var tabSpecAlbum = tabHost.newTabSpec("ALBUM").setIndicator("앨범별")
+//        tabSpecAlbum.setContent(R.id.tabAlbum)
+//        tabHost.addTab(tabSpecAlbum)
+//
+//        tabHost.currentTab = 0
     }
 }
