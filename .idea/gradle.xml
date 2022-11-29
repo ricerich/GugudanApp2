@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/ex06_webview" />
             <option value="$PROJECT_DIR$/ex07_dlg_multi_choice" />
             <option value="$PROJECT_DIR$/ex07_jeju" />
+            <option value="$PROJECT_DIR$/ex07_login" />
           </set>
         </option>
       </GradleProjectSettings>

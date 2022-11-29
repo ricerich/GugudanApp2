@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity()
             dlg.setIcon(R.mipmap.ic_launcher)
             //내용
 
-
             dlg.setMultiChoiceItems(versionArray,checkArray){dialog, position, isChecked ->
 //                btn1.text = versionArray[position]
                 var str1 : String = ""
