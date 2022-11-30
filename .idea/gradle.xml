@@ -21,6 +21,8 @@
             <option value="$PROJECT_DIR$/ex07_dlg_multi_choice" />
             <option value="$PROJECT_DIR$/ex07_jeju" />
             <option value="$PROJECT_DIR$/ex07_login" />
+            <option value="$PROJECT_DIR$/ex10_1_activity" />
+            <option value="$PROJECT_DIR$/ex10_picture" />
           </set>
         </option>
       </GradleProjectSettings>
