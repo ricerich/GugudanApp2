@@ -24,6 +24,10 @@
             <option value="$PROJECT_DIR$/ex10_1_activity" />
             <option value="$PROJECT_DIR$/ex10_calc_both_act" />
             <option value="$PROJECT_DIR$/ex10_picture" />
+            <option value="$PROJECT_DIR$/ex11_1_listview_insert_delete" />
+            <option value="$PROJECT_DIR$/ex11_2_listview_movie" />
+            <option value="$PROJECT_DIR$/ex11_3_gallery" />
+            <option value="$PROJECT_DIR$/ex11_4_spinner" />
           </set>
         </option>
       </GradleProjectSettings>
